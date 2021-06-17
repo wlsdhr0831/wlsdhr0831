@@ -15,7 +15,5 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-[![solved.ac tier](http://mazassumnida.wtf/api/generate_badge?boj=wlsdhr0831)](https://solved.ac/wlsdhr0831)
-
 [![solved.ac tier](http://mazassumnida.wtf/api/v2/generate_badge?boj=wlsdhr0831)](https://solved.ac/wlsdhr0831)
 
