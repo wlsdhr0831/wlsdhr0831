@@ -15,6 +15,6 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=wlsdhr0831&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
+<!-- [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=wlsdhr0831&layout=compact)](https://github.com/anuraghazra/github-readme-stats) -->
 [![solved.ac tier](http://mazassumnida.wtf/api/v2/generate_badge?boj=wlsdhr0831)](https://solved.ac/wlsdhr0831)
 
