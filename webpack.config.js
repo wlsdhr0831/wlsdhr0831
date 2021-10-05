@@ -9,8 +9,8 @@ module.exports = {
     main: './src/index',
   },
   output: {
-    path: path.join(__dirname, 'dist'),
-    filename: 'blockVillageFrontend.js',
+    path: path.join(__dirname, 'docs'),
+    filename: 'portfolio.js',
   },
   module: {
     rules: [
