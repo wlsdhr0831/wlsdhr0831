@@ -1,8 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(
-    <App />,
-    document.getElementById('app')
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <App/>
+  </BrowserRouter>,
+  document.getElementById('app')
 );
