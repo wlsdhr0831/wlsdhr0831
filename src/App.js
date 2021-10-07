@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
 import './App.css';
 import Home from './routes/Home';
 import Component from './routes/Component';
@@ -10,12 +10,13 @@ const App = () => {
     <>
       <Navigation />
       <Switch>
-        <Route exact path="/" >
+        <Route exact path="/main" >
           <Home/>
         </Route>
         <Route path="/component/:id">
           <Component/>
         </Route>
+        <Redirect path="*" to="/main"/>
       </Switch>
     </>
   );

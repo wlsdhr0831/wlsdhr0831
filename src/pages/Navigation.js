@@ -13,7 +13,7 @@ const defaultStyle = {
 const Home = () => {
   return (
     <div className="navigation">
-      <Link to="/" activeStyle={activeStyle} exact style={defaultStyle}>
+      <Link to="/main" activeStyle={activeStyle} exact style={defaultStyle}>
         Home
       </Link>
       <Link to="/component/1" activeStyle={activeStyle} style={defaultStyle}>
