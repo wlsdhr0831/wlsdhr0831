@@ -13,9 +13,9 @@ const defaultStyle = {
 const Home = () => {
   return (
     <div className="navigation">
-      <Link to="/main" activeStyle={activeStyle} exact style={defaultStyle}>
+      <Link to="/wlsdhr0831" activeStyle={activeStyle} exact style={defaultStyle}>
         Home
-      </Link>
+      </Link> | 
       <Link to="/component/1" activeStyle={activeStyle} style={defaultStyle}>
         Component
       </Link>
