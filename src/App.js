@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import './App.css';
 import Home from './routes/Home';
 import Component from './routes/Component';
@@ -9,10 +9,14 @@ const App = () => {
   return (
     <>
       <Navigation />
-      <Route exact path="/" component={Home} />
-      <Route path="/component/:id">
-        <Component/>
-      </Route>
+      <Switch>
+        <Route exact path="/" >
+          <Home/>
+        </Route>
+        <Route path="/component/:id">
+          <Component/>
+        </Route>
+      </Switch>
     </>
   );
 };

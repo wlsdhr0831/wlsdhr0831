@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const activeStyle = {
   color: "#09D3AC",
@@ -13,12 +13,12 @@ const defaultStyle = {
 const Home = () => {
   return (
     <div className="navigation">
-      <NavLink to="/" activeStyle={activeStyle} exact style={defaultStyle}>
+      <Link to="/" activeStyle={activeStyle} exact style={defaultStyle}>
         Home
-      </NavLink>
-      <NavLink to="/component" activeStyle={activeStyle} style={defaultStyle}>
+      </Link>
+      <Link to="/component/1" activeStyle={activeStyle} style={defaultStyle}>
         Component
-      </NavLink>
+      </Link>
     </div>);
 };
 export default Home;
