@@ -10,13 +10,13 @@ const App = () => {
     <>
       <Navigation />
       <Switch>
-        <Route exact path="/wlsdhr0831" >
+        <Route exact path="/main" >
           <Home/>
         </Route>
         <Route path="/component/:id">
           <Component/>
         </Route>
-        <Redirect path="*" to="/wlsdhr0831"/>
+        <Redirect path="*" to="/main"/>
       </Switch>
     </>
   );
