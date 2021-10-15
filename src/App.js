@@ -1,21 +1,16 @@
 import React from 'react';
 import { Switch, Route, Redirect } from "react-router-dom";
-import './App.css';
-import Home from './routes/Home';
-import Component from './routes/Component';
+import Home from './pages/Home';
+import Detail from './pages/Detail';
 import Navigation from './pages/Navigation';
 
 const App = () => {
   return (
     <>
-      <Navigation />
+      {/* <Navigation /> */}
       <Switch>
-        <Route exact path="/main" >
-          <Home/>
-        </Route>
-        <Route path="/component/:id">
-          <Component/>
-        </Route>
+        <Route exact path="/main" component={Home}/>
+        <Route exact path="/detail/:id" component={Detail}/>
         <Redirect path="*" to="/main"/>
       </Switch>
     </>
