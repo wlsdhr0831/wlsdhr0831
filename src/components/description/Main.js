@@ -1,8 +1,9 @@
 import React from 'react';
 
-const Main = () => {
+const Main = ({ title, desc }) => {
     return (<>
-        메인
+        <div>{title}</div>
+        <div>{desc}</div>
     </>);
 }
 

@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Sub = () => {
+const Sub = ({ code }) => {
     return (<>
-        서브
+        <div>{code}</div>
     </>);
 }
 

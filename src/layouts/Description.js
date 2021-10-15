@@ -8,11 +8,13 @@ const DescriptionBox = styled.div`
     width: 50%;
 `;
 
-const Description = () => {
+const Description = ({ data }) => {
+    const { title, desc, code} = data;
+
     return (
     <DescriptionBox>
-        <Main/>
-        <Sub/>
+        <Main title={title} desc={desc}/>
+        <Sub code={code}/>
     </DescriptionBox>);
 }
 

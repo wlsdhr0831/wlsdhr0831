@@ -8,11 +8,11 @@ const PreviewBox = styled.div`
     width: 50%;
 `;
 
-const Preview = () => {
+const Preview = ({ code }) => {
     return (
     <PreviewBox>
         <Button>뒤로 가기</Button>
-        <View/>
+        <View code={code}/>
     </PreviewBox>);
 }
 

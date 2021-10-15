@@ -1,8 +1,8 @@
 import React from 'react';
 
-const View = () => {
+const View = ({ code }) => {
     return (<>
-        <div>코드 미리보기</div>
+        <div dangerouslySetInnerHTML={{ __html: code }}></div>
     </>);
 }
 
