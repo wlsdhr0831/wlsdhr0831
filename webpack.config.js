@@ -26,8 +26,8 @@ module.exports = {
         },
       },
       {
-        test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
+        test: /\.scss$/,
+        use: ["style-loader", "css-loader", "sass-loader"],
       },
     ],
   },
@@ -37,11 +37,6 @@ module.exports = {
     }),
   ],
   devServer: {
-    proxy: {
-        "/" : {
-            target: "http:170.0.0.1:8000/",
-            changeOrigin: true
-        }
-    }
+    historyApiFallback: { index: "/", disableDotRule: true }
   }
 };
