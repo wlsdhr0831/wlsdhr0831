@@ -37,6 +37,11 @@ module.exports = {
     }),
   ],
   devServer: {
-    historyApiFallback: true, 
+    proxy: {
+      "/" : {
+          target: "http:170.0.0.1:8000/",
+          changeOrigin: true
+      }
+    }
   }
 };
