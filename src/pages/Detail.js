@@ -20,20 +20,22 @@ const Detail = ({ match }) => {
       id: 1,
       title: "버튼",
       desc: "버튼",
+      url: 'select-option',
       code: "<button>예시 버튼</button>"
     },
     {
       id: 2,
       title: "인풋",
       desc: "버튼",
+      url: 'to-do',
       code: "<input placeholder='예시 인풋'/>"
     }
   ];
 
   return (
     <FlexBox>
-      <Preview code={code.code}/>
-      <Description data={code}/>
+      <Preview url={code.url}/>
+      <Description data={code.id}/>
     </FlexBox>);
 };
 export default Detail;
