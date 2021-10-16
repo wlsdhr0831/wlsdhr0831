@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from "react-router-dom";
 import Button from '../components/common/Button';
 import View from '../components/preview/View';
 
@@ -11,7 +12,9 @@ const PreviewBox = styled.div`
 const Preview = ({ code }) => {
     return (
     <PreviewBox>
-        <Button>뒤로 가기</Button>
+        <Link to={`/main`}>
+            <Button>뒤로 가기</Button>
+        </Link>
         <View code={code}/>
     </PreviewBox>);
 }
