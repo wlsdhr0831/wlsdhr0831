@@ -10,7 +10,6 @@ export class SelectObject {
     }
 
     selectAllOptions() {
-        console.log("함수");
         this.total = true;
         this.optionList.forEach(option => {
             option.value = true;
@@ -18,7 +17,6 @@ export class SelectObject {
     }
 
     deselectAllOPtions() {
-        console.log("함수");
         this.total = false;
         this.optionList.forEach(option => {
             option.value = false;
@@ -26,7 +24,6 @@ export class SelectObject {
     }
 
     selectOption(idx) {
-        console.log("함수");
         this.optionList[idx].value = true;
     
         if(this.isSelectedAll()) {
@@ -35,7 +32,6 @@ export class SelectObject {
     }   
 
     deselectOption(idx) {
-        console.log("함수");
         this.optionList[idx].value = false;
         this.total = false;
     }  
