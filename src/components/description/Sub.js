@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import SelectObject from '../../txt/SelectObject.js';
 import TodoObject from '../../txt/TodoObject.js';
+import Highlight from 'react-highlight';
+import 'highlight.js/scss/night-owl.scss';
 
 const Sub = ({ id }) => {
     const [code, setCode] = useState('');
@@ -13,10 +15,9 @@ const Sub = ({ id }) => {
         }
     }, [id]);
 
-    return (
-    <pre>
-        <code>{code}</code>
-    </pre>);
+    return (<>
+        <Highlight className="javascript">{code}</Highlight>
+    </>);
 }
 
 export default Sub;

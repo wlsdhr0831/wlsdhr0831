@@ -30,10 +30,6 @@ const Detail = ({ match }) => {
     setCode(codeList[match.params.id-1]);
   }, []);
 
-  useEffect(() => {
-    console.log(code);
-  }, [code]);
-
   return (
     <FlexBox>
       <Preview url={code.url}/>
