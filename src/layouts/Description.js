@@ -10,6 +10,11 @@ const DescriptionBox = styled.div`
     overflow-y: auto;
     padding: 30px;
     background-color: white;
+
+    @media ${({ theme }) => theme.tabletL} {
+        width: 100%;
+        height: inherit;
+    }
 `;
 
 const Description = ({ title, desc, id }) => {

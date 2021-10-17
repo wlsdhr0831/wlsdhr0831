@@ -9,6 +9,10 @@ const PreviewBox = styled.div`
     width: calc(50% - 60px);
     height: 100%;
     padding: 30px;
+
+    @media ${({ theme }) => theme.tabletL} {
+        width: 100%;
+    }
 `;
 
 const Preview = ({ url }) => {
