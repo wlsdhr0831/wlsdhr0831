@@ -1,22 +1,40 @@
 import React, { useState, useEffect } from 'react';
-import SelectObject from '../../txt/SelectObject.js';
-import TodoObject from '../../txt/TodoObject.js';
+import SelectObject from '../../txt/select/SelectObject.js';
+import TodoObject from '../../txt/todo/TodoObject.js';
 import Highlight from 'react-highlight';
 import 'highlight.js/scss/night-owl.scss';
 
 const Sub = ({ id }) => {
-    const [code, setCode] = useState('');
+    const [codeList, setCodeList] = useState([]);
 
     useEffect(() => {
         if(id === 1){
-            setCode(SelectObject);
+            setCodeList([
+                {   
+                    fileName : 'SelectObject.js',
+                    code: SelectObject,
+                    desc: `selectAllOptions, deselectAllOptions, selectOption, deselectOption, isSelectedAll`,
+                },
+            ]);
         }else if(id === 2){
-            setCode(TodoObject);
+            setCodeList([
+                {
+                    fileName : 'TodoObject.js',
+                    code: TodoObject,
+                    desc: `postTodo, putTodo, deleteTodo`,
+                },
+            ]);
         }
     }, [id]);
 
     return (<>
-        <Highlight className="javascript">{code}</Highlight>
+        { codeList.map(( codeItem, idx ) => (
+            <div key={idx}>
+                <h2>{codeItem.fileName}</h2>
+                <Highlight className="javascript">{codeItem.code}</Highlight>
+                <div>{codeItem.desc}</div>
+            </div>))
+        }
     </>);
 }
 

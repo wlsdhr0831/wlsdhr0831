@@ -5,13 +5,18 @@ import Sub from '../components/description/Sub';
 
 const DescriptionBox = styled.div`
     display: inline-block;
-    width: 50%;
+    width: calc(50% - 60px);
+    height: 850px;
+    overflow: scroll;
+    overflow-x: auto;
+    padding: 30px;
 `;
 
 const Description = ({ title, desc, id }) => {
     return (
     <DescriptionBox>
         <Main title={title} desc={desc}/>
+        <hr/>
         <Sub id={id}/>
     </DescriptionBox>);
 }

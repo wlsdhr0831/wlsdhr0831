@@ -14,14 +14,16 @@ const Detail = ({ match }) => {
   const codeList = [
     {
       id: 1,
-      title: "전체 선택, 일부 선택",
-      desc: "전체 선택, 일부 선택",
+      title: "체크박스 전체 선택 / 전체 해제 구현",
+      desc: `체크박스를 이용한 전체 선택 및 해제 로직을 구현하였습니다.
+            SelectObject 라는 이름의 클래스를 제작하였습니다. `,
       url: 'select-option'
     },
     {
       id: 2,
-      title: "To-do List",
-      desc: "To-do List",
+      title: "To-do List 구현",
+      desc: `간단한 To do List 로직을 구현하였습니다.
+            TodoObject 라는 이름의 클래스를 제작하였습니다.`,
       url: 'to-do'
     }
   ];

@@ -6,8 +6,10 @@ import Iframe from 'react-iframe'
 
 const PreviewBox = styled.div`
     display: inline-block;
-    width: 50%;
+    width: calc(50% - 60px);
     height: 100%;
+    background-color: #f5ae5c;
+    padding: 30px;
 `;
 
 const Preview = ({ url }) => {
