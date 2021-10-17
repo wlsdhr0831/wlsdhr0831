@@ -11,7 +11,7 @@ const DescriptionBox = styled.div`
     padding: 30px;
     background-color: white;
 
-    @media ${({ theme }) => theme.tabletL} {
+    @media ${({ theme }) => theme.laptop} {
         width: 100%;
         height: inherit;
     }

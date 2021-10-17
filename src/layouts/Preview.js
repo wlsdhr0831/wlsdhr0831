@@ -10,7 +10,7 @@ const PreviewBox = styled.div`
     height: 100%;
     padding: 30px;
 
-    @media ${({ theme }) => theme.tabletL} {
+    @media ${({ theme }) => theme.laptop} {
         width: 100%;
     }
 `;
