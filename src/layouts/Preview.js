@@ -15,14 +15,14 @@ const Preview = ({ url }) => {
     return (
         <PreviewBox>
             <Link to={`/main`}>
-                <Button>뒤로 가기</Button>
+                <Button>◀ Back</Button>
             </Link>
             {url &&
                 <Iframe 
-                url={"https://wlsdhr0831.github.io/"+url+"/"}
-                width="100%"
-                height="800px"
-                frameBorder="0"/>
+                    url={"https://wlsdhr0831.github.io/"+url+"/"}
+                    width="100%"
+                    height="800px"
+                    frameBorder="0"/>
             }
         </PreviewBox>);
 }

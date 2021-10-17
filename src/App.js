@@ -5,13 +5,11 @@ import Detail from './pages/Detail';
 
 const App = () => {
   return (
-    <>
-      <Switch>
-        <Route exact path="/main" component={Home}/>
-        <Route exact path="/detail/:id" component={Detail}/>
-        <Redirect path="*" to="/main"/>
-      </Switch>
-    </>
+    <Switch>
+      <Route exact path="/main" component={Home}/>
+      <Route exact path="/detail/:id" component={Detail}/>
+      <Redirect path="*" to="/main"/>
+    </Switch>
   );
 };
 

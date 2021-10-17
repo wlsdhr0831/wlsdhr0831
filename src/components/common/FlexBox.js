@@ -5,7 +5,6 @@ const FlexBox = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  width: 100%;
   margin: 0px;
 `;
 

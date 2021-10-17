@@ -6,9 +6,8 @@ import Sub from '../components/description/Sub';
 const DescriptionBox = styled.div`
     display: inline-block;
     width: calc(50% - 60px);
-    height: 867px;
-    overflow-y: scroll;
-    overflow-x: none;
+    height: calc(100vh - 60px);
+    overflow-y: auto;
     padding: 30px;
     background-color: white;
 `;
