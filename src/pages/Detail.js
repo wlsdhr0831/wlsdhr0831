@@ -4,38 +4,40 @@ import Description from "../layouts/Description";
 import Preview from "../layouts/Preview";
 
 const Detail = ({ match }) => {
-  useEffect(() => {
-    setCode(codeList[match.params.id-1]);
-  }, []);
-
   const [code, setCode] = useState({
     id: 0,
     title: '',
     desc: '',
-    code: '',
+    url: '',
   });
 
   const codeList = [
     {
       id: 1,
-      title: "버튼",
-      desc: "버튼",
-      url: 'select-option',
-      code: "<button>예시 버튼</button>"
+      title: "전체 선택, 일부 선택",
+      desc: "전체 선택, 일부 선택",
+      url: 'select-option'
     },
     {
       id: 2,
-      title: "인풋",
-      desc: "버튼",
-      url: 'to-do',
-      code: "<input placeholder='예시 인풋'/>"
+      title: "To-do List",
+      desc: "To-do List",
+      url: 'to-do'
     }
   ];
+
+  useEffect(() => {
+    setCode(codeList[match.params.id-1]);
+  }, []);
+
+  useEffect(() => {
+    console.log(code);
+  }, [code]);
 
   return (
     <FlexBox>
       <Preview url={code.url}/>
-      <Description data={code.id}/>
+      <Description title={code.title} desc={code.desc} id={code.id}/>
     </FlexBox>);
 };
 export default Detail;

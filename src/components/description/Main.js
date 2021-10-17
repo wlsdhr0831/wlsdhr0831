@@ -2,7 +2,7 @@ import React from 'react';
 
 const Main = ({ title, desc }) => {
     return (<>
-        <div>{title}</div>
+        <h1>{title}</h1>
         <div>{desc}</div>
     </>);
 }
