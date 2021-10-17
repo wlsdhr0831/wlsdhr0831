@@ -6,10 +6,11 @@ import Sub from '../components/description/Sub';
 const DescriptionBox = styled.div`
     display: inline-block;
     width: calc(50% - 60px);
-    height: 850px;
-    overflow: scroll;
-    overflow-x: auto;
+    height: 867px;
+    overflow-y: scroll;
+    overflow-x: none;
     padding: 30px;
+    background-color: white;
 `;
 
 const Description = ({ title, desc, id }) => {

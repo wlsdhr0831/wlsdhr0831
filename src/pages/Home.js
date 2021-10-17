@@ -12,10 +12,10 @@ const Home = () => {
   return (<>
     <ProfileImage 
       src={Image1} alt="Profile Image"/>
-    <Search>
+    {/* <Search>
       <SearchInput/>
       <Button>검색</Button>
-    </Search>
+    </Search> */}
     <List/>
   </>);
 };

@@ -4,31 +4,34 @@ import { Link } from "react-router-dom";
 
 const Item = styled.div`
   display: inline-block;
-  width: 200px;
+  width: 350px;
   height: 200px;
   text-align: center;
-  margin: 10px;
+  margin: 20px 10px;
   border-radius: 10px;
-  background-color: darkgray;
-`;
-
-const ItemTitle = styled.div`
-  font-weight: bold;
-  font-size: 1.5rem;
   color: black;
-  margin: 10px;
-`;
+  background-color: white;
+  position: relative;
 
-const ItemBody = styled.div``;
+  &:hover {
+    color: white;
+    background-color: #e77c00;
+  }
+
+  h3{
+    width: 90%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+`;
 
 const ListItem = ({ item }) => {
   return (
   <Link to={`/detail/${item.id}`}>
     <Item>
-      <ItemTitle>
-        {item.title}
-      </ItemTitle>
-      <ItemBody></ItemBody>
+      <h3>{item.title}</h3>
     </Item>
   </Link>);
 };

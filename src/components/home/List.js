@@ -5,10 +5,10 @@ import FlexBox from '../common/FlexBox';
 const List = () => {
     const data = [{
         id: 1,
-        title: '전체선택, 부분선택',
+        title: '체크박스 전체 선택 / 전체 해제',
     }, {
         id: 2,
-        title: 'Todo',
+        title: 'To-do List',
     }];
 
     return (
