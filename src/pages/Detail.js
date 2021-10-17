@@ -25,6 +25,13 @@ const Detail = ({ match }) => {
       desc: `간단한 To do List 로직을 구현하였습니다.
             TodoObject 라는 이름의 클래스를 제작하였습니다.`,
       url: 'to-do'
+    },
+    {
+      id: 3,
+      title: "달력 구현",
+      desc: `간단한 달력을 구현하였습니다.
+            CalendarObject 라는 이름의 클래스를 제작하였습니다.`,
+      url: 'calendar'
     }
   ];
 

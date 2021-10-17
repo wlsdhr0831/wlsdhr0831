@@ -24,6 +24,14 @@ const Sub = ({ id }) => {
                     desc: `postTodo, putTodo, deleteTodo`,
                 },
             ]);
+        }else if(id === 3){
+            setCodeList([
+                {
+                    fileName : 'CalendarObject.js',
+                    code: '',
+                    desc: ``,
+                },
+            ]);
         }
     }, [id]);
 
