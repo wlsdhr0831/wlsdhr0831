@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import SelectObject from '../../txt/select/SelectObject.js';
+import SelectObject from '../../txt/select/selectObject.js';
 
 import TodoObject from '../../txt/todo/todoObject.js';
 import TodoHtml from '../../txt/todo/indexHtml.js';
