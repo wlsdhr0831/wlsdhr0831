@@ -5,30 +5,30 @@ import Button from '../components/common/Button';
 import Iframe from 'react-iframe'
 
 const PreviewBox = styled.div`
-    display: inline-block;
-    width: calc(50% - 60px);
-    height: 100%;
-    padding: 30px;
+  display: inline-block;
+  width: calc(50% - 60px);
+  height: 100%;
+  padding: 30px;
 
-    @media ${({ theme }) => theme.laptop} {
-        width: 100%;
-    }
+  @media ${({ theme }) => theme.laptop} {
+    width: 100%;
+  }
 `;
 
 const Preview = ({ url }) => {
-    return (
-        <PreviewBox>
-            <Link to={`/main`}>
-                <Button>◀ Back</Button>
-            </Link>
-            {url &&
-                <Iframe 
-                    url={"https://wlsdhr0831.github.io/"+url+"/"}
-                    width="100%"
-                    height="800px"
-                    frameBorder="0"/>
-            }
-        </PreviewBox>);
+  return (
+    <PreviewBox>
+      <Link to={`/main`}>
+        <Button>◀ Back</Button>
+      </Link>
+      {url &&
+        <Iframe
+          url={"https://wlsdhr0831.github.io/" + url + "/"}
+          width="100%"
+          height="800px"
+          frameBorder="0" />
+      }
+    </PreviewBox>);
 }
 
 export default Preview;
