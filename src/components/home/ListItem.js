@@ -7,15 +7,17 @@ const Item = styled.div`
   width: 350px;
   height: 200px;
   text-align: center;
-  margin: 20px 10px;
+  margin: 20px 20px;
   border-radius: 10px;
   color: black;
   background-color: white;
   position: relative;
+  box-shadow: 1px 1px 5px 5px #eb8d5c;
 
   &:hover {
     color: white;
-    background-color: #e77c00;
+    background-color: #eb8d5c;
+    box-shadow: 1px 1px 5px 5px white;
   }
 
   h3{
