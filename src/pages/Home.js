@@ -1,8 +1,8 @@
 import React from "react";
 import styled from 'styled-components';
 import ProfileImage from "../components/home/ProfileImage";
+import MainList from '../layouts/MainList';
 import Search from "../components/home/Search";
-import List from "../components/home/List";
 import SearchInput from "../components/home/SearchInput";
 import Button from "../components/common/Button";
 import Image1 from "../img/1.jpg";
@@ -22,7 +22,7 @@ const Home = () => {
     {/* <Search>
       <SearchInput/>
     </Search> */}
-    <List/>
+    <MainList></MainList>
   </HomeBox>);
 };
 export default Home;
