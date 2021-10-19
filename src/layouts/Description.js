@@ -11,6 +11,18 @@ const DescriptionBox = styled.div`
   padding: 30px;
   background-color: white;
 
+  &::-webkit-scrollbar {
+    width: 30px;
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #003566;
+    border-radius: 20px;
+    background-clip: padding-box;
+    border: 8px solid transparent;
+  }
+
   @media ${({ theme }) => theme.laptop} {
     width: 100%;
     height: inherit;

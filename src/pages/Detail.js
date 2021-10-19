@@ -1,7 +1,25 @@
 import React, { useEffect, useState } from "react";
+import styled from "styled-components";
 import FlexBox from "../components/common/FlexBox";
 import Description from "../layouts/Description";
 import Preview from "../layouts/Preview";
+
+const DetailBox = styled.div`
+  overflow: auto;
+  height: inherit;
+  
+  &::-webkit-scrollbar {
+    width: 40px;
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255, 0.8);
+    border-radius: 20px;
+    background-clip: padding-box;
+    border: 13px solid transparent;
+  }
+`;
 
 const Detail = ({ match }) => {
   const [code, setCode] = useState({
@@ -44,9 +62,11 @@ const Detail = ({ match }) => {
   }, []);
 
   return (
-    <FlexBox>
-      <Preview url={code.url}/>
-      <Description title={code.title} desc={code.desc} id={code.id}/>
-    </FlexBox>);
+    <DetailBox>
+      <FlexBox>
+        <Preview url={code.url}/>
+        <Description title={code.title} desc={code.desc} id={code.id}/>
+      </FlexBox>
+    </DetailBox>);
 };
 export default Detail;
