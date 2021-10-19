@@ -51,9 +51,9 @@ const MainList = () => {
   return (
     <ListBox>
       <Tab onMouseMove={onMouseMove} onClick={onClick}>
-        <h2 id="1" className={hover === "1" && 'hover'}>All</h2>
-        <h2 id="2" className={hover === "2" && 'hover'}>List</h2>
-        <h2 id="3" className={hover === "3" && 'hover'}>Calendar</h2>
+        <h2 id="1" className={hover === "1" ? 'hover' : ''}>All</h2>
+        <h2 id="2" className={hover === "2" ? 'hover' : ''}>List</h2>
+        <h2 id="3" className={hover === "3" ? 'hover' : ''}>Calendar</h2>
       </Tab>
       <List/>
     </ListBox>
