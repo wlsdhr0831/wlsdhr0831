@@ -11,7 +11,6 @@ const ListBox = styled.div`
 const Tab = styled.div`
   color: white;
   height: 50px;
-  margin-bottom: 20px;
   padding: 10px;
 
   & h2{

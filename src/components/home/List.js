@@ -6,6 +6,7 @@ import styled from 'styled-components';
 const ScrollBox = styled.div`
   height: calc(100vh - 275px);
   overflow: auto;
+  padding: 30px;
 
   &::-webkit-scrollbar {
     width: 40px;
