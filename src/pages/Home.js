@@ -11,6 +11,7 @@ import Image3 from "../img/3.jpg";
 
 const HomeBox = styled.div`
   overflow: auto;
+  height: 100%;
 `;
 
 const Home = () => {

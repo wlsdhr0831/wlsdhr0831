@@ -12,12 +12,29 @@ const Item = styled.div`
   color: black;
   background-color: white;
   position: relative;
-  box-shadow: 1px 1px 5px 5px #eb8d5c;
+  box-shadow: -10px 25px 50px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease-in;
 
-  &:hover {
+  .bg{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: all 0.5s ease-in;
+    opacity: 0;
+  }
+
+  &:hover, &:hover .bg {
+    opacity: 1;
     color: white;
-    background-color: #eb8d5c;
-    box-shadow: 1px 1px 5px 5px white;
+    background: linear-gradient(
+      135deg, 
+      ${props => props.theme['colorStart'+props.color]} 0%, 
+      ${props => props.theme['colorEnd'+props.color]} 100%
+    );
   }
 
   h3{
@@ -32,7 +49,8 @@ const Item = styled.div`
 const ListItem = ({ item }) => {
   return (
   <Link to={`/detail/${item.id}`}>
-    <Item>
+    <Item color={item.id}>
+      <div className="bg"></div>
       <h3>{item.title}</h3>
     </Item>
   </Link>);

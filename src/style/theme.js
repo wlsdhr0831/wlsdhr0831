@@ -8,6 +8,16 @@ const size = {
 };
 
 const theme = {
+  colorStart1: "#fbec9f",
+  colorEnd1: "#fdb833",
+  colorStart2: "#FEC3A6",
+  colorEnd2: "#FF928B",
+  colorStart3: "#a2d6f9",
+  colorEnd3: "#1360e2",
+  colorStart4: "#dec9e9",
+  colorEnd4: "#9163cb",
+  colorStart5: "#fafa00",
+  colorEnd5: "#55a630",
   mobile: `(max-width: ${size.mobile})`,
   tabletS: `(max-width: ${size.tabletS})`,
   tabletM: `(max-width: ${size.tabletM})`,
