@@ -7,6 +7,7 @@ import Button from "../components/common/Button";
 import Image1 from "../img/1.jpg";
 import Image2 from "../img/2.jpg";
 import Image3 from "../img/3.jpg";
+import logo from '../img/favicon_text.png';
 
 const HomeBox = styled.div`
   overflow: auto;
@@ -33,7 +34,7 @@ const Home = () => {
   <HomeBox>
     <Profile>
       <img 
-        src={Image1} alt="Profile Image"/>
+        src={logo} alt="Profile Image"/>
     </Profile>
     {/* <Search>
       <SearchInput/>
