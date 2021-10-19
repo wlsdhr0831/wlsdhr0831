@@ -12,11 +12,12 @@ const Tab = styled.div`
   color: white;
   height: 50px;
   margin-bottom: 50px;
+  padding: 10px;
 
   & h2{
     cursor: pointer;
     color: darkgray;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     display: inline-block;
     transition: all 0.5s ease-in;
     padding: 0px 10px;
