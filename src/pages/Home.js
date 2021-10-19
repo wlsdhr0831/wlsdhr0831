@@ -1,6 +1,5 @@
 import React from "react";
 import styled from 'styled-components';
-import ProfileImage from "../components/home/ProfileImage";
 import MainList from '../layouts/MainList';
 import Search from "../components/home/Search";
 import SearchInput from "../components/home/SearchInput";
@@ -14,11 +13,28 @@ const HomeBox = styled.div`
   height: 100%;
 `;
 
+const Profile = styled.div`
+  position: fixed;
+  top: 30px;
+  left: 30px;
+
+  & img{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 30px;
+  };
+`;
+
 const Home = () => {
   return (
   <HomeBox>
-    <ProfileImage 
-      src={Image1} alt="Profile Image"/>
+    <Profile>
+      <img 
+        src={Image1} alt="Profile Image"/>
+    </Profile>
     {/* <Search>
       <SearchInput/>
     </Search> */}
