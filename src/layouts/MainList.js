@@ -5,13 +5,13 @@ import List from "../components/home/List";
 const ListBox = styled.div`
   position: absolute;
   top: 20%;
-  padding-left: 50px;
+  padding: 0px 50px;
 `;
 
 const Tab = styled.div`
   color: white;
   height: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   padding: 10px;
 
   & h2{

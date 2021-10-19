@@ -1,6 +1,24 @@
 import React from 'react';
 import ListItem from './ListItem';
 import FlexBox from '../common/FlexBox';
+import styled from 'styled-components';
+
+const ScrollBox = styled.div`
+  height: calc(100vh - 275px);
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    width: 40px;
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255, 0.8);
+    border-radius: 20px;
+    background-clip: padding-box;
+    border: 13px solid transparent;
+  }
+`;
 
 const List = () => {
   const data = [
@@ -20,11 +38,13 @@ const List = () => {
   ];
 
   return (
-    <FlexBox>
-      {data.map(d => (
-        <ListItem key={d.id} item={d} />
-      ))}
-    </FlexBox>);
+    <ScrollBox>
+      <FlexBox>
+        {data.map(d => (
+          <ListItem key={d.id} item={d} />
+          ))}
+      </FlexBox>
+    </ScrollBox>);
 }
 
 export default List;
