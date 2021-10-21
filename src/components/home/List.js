@@ -30,12 +30,13 @@ const List = () => {
       id: 2,
       title: 'To-do List',
     }, {
-      id: 3,
-      title: 'Calendar',
-    }, {
       id: 4,
       title: 'Portfolio',
-    }
+    },
+    // {
+    //   id: 3,
+    //   title: 'Calendar',
+    // }, 
   ];
 
   return (

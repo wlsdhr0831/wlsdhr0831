@@ -30,8 +30,8 @@ const Tab = styled.div`
 `;
 
 const MainList = () => {
-  const [ hover, setHover ] = useState("1");
-  const [ selected, setSelected ] = useState("1");
+  const [ hover, setHover ] = useState("all");
+  const [ selected, setSelected ] = useState("all");
 
   const onMouseMove = (e) => {
     if(e.target.nodeName === 'H2'){
@@ -47,12 +47,24 @@ const MainList = () => {
     }
   }
 
+  const tabList = [{
+    value: 'All',
+    id: 'all',
+  }];
+
   return (
     <ListBox>
       <Tab onMouseMove={onMouseMove} onClick={onClick}>
-        <h2 id="1" className={hover === "1" ? 'hover' : ''}>All</h2>
-        <h2 id="2" className={hover === "2" ? 'hover' : ''}>List</h2>
-        <h2 id="3" className={hover === "3" ? 'hover' : ''}>Calendar</h2>
+        {
+          tabList.map(tab => (
+            <h2 
+              key={tab.id} 
+              id={tab.id} 
+              className={hover === `${tab.id}` ? "hover" : ''}>
+                {tab.value}
+            </h2>
+          ))
+        }
       </Tab>
       <List/>
     </ListBox>
