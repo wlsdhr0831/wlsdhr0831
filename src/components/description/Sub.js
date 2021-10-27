@@ -2,13 +2,18 @@ import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 
 import SelectObject from '../../txt/select/selectObject.js';
+import SelectHtml from '../../txt/select/indexHtml.js';
+import SelectAppCss from '../../txt/select/appCss.js';
+import SelectCss from '../../txt/select/selectCss.js';
+import SelectAppJs from '../../txt/select/appjs.js';
+import * as SelectDesc from '../../txt/select/selectDesc.js';
 
 import TodoObject from '../../txt/todo/todoObject.js';
 import TodoHtml from '../../txt/todo/indexHtml.js';
 import TodoInputCss from '../../txt/todo/inputCss.js';
 import TodoAppCss from '../../txt/todo/appCss.js';
 import TodoTodoCss from '../../txt/todo/todoCss.js';
-import AppJs from '../../txt/todo/appJs.js';
+import TodoAppJs from '../../txt/todo/appJs.js';
 import * as TodoDesc from '../../txt/todo/todoDesc.js';
 
 import Highlight from 'react-highlight';
@@ -32,8 +37,29 @@ const Sub = ({ id }) => {
         {
           fileName: 'SelectObject.js',
           code: SelectObject,
-          desc: `selectAllOptions, deselectAllOptions, selectOption, deselectOption, isSelectedAll`,
+          desc: SelectDesc.object,
           script: 'javascript',
+        },
+        {
+          fileName: 'Example',
+          code: SelectAppJs,
+          desc: SelectDesc.appJs,
+          script: 'javascript',
+        },
+        {
+          fileName: 'SelectObject.js',
+          code: SelectHtml,
+          script: 'html',
+        },
+        {
+          fileName: 'SelectObject.js',
+          code: SelectAppCss,
+          script: 'css',
+        },
+        {
+          fileName: 'SelectObject.js',
+          code: SelectCss,
+          script: 'css',
         },
       ]);
     } else if (id === 2) {
@@ -46,7 +72,7 @@ const Sub = ({ id }) => {
         },
         {
           fileName: 'Example',
-          code: AppJs,
+          code: TodoAppJs,
           desc: TodoDesc.app,
           script: 'javascript',
         },
@@ -92,8 +118,7 @@ const Sub = ({ id }) => {
       <div key={idx}>
         <h2>{codeItem.fileName}</h2>
         <Highlight className={codeItem.script}>{codeItem.code}</Highlight>
-        { codeItem.desc.length > 0 
-          && <Desc>{codeItem.desc}</Desc>}
+        { codeItem.desc && <Desc>{codeItem.desc}</Desc>}
       </div>))
     }
   </>);

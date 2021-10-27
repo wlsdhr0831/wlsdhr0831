@@ -17,7 +17,7 @@ const code = `class SelectObject {
     });
   }
 
-  deselectAllOPtions() {
+  deselectAllOptions() {
     this.total = false;
 
     this.optionList.forEach(option => {

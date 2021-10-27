@@ -34,7 +34,7 @@ const Detail = ({ match }) => {
       id: 1,
       title: "체크박스 전체 선택 / 전체 해제 구현",
       desc: `체크박스를 이용한 전체 선택 및 해제 로직을 구현하였습니다.
-            SelectObject 라는 이름의 클래스를 제작하여  
+            SelectObject 라는 이름의 클래스를 제작하였습니다.
             현재 Chrome에서 최적화 되어 있습니다.`,
       url: 'select-option'
     }, {
