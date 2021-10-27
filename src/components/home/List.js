@@ -21,17 +21,22 @@ const ScrollBox = styled.div`
   }
 `;
 
-const List = () => {
+const List = ({ selected }) => {
   const data = [
     {
       id: 1,
       title: '체크박스 전체 선택 / 전체 해제',
-    }, {
+      value: 'todo',
+    }, 
+    {
       id: 2,
       title: 'To-do List',
-    }, {
+      value: 'list',
+    }, 
+    {
       id: 4,
       title: 'Portfolio',
+      value: 'portfolio',
     },
     // {
     //   id: 3,
@@ -43,8 +48,8 @@ const List = () => {
     <ScrollBox>
       <FlexBox>
         {data.map(d => (
-          <ListItem key={d.id} item={d} />
-          ))}
+          d.value.includes(selected) && <ListItem key={d.id} item={d} />))
+        }
       </FlexBox>
     </ScrollBox>);
 }

@@ -30,8 +30,8 @@ const Tab = styled.div`
 `;
 
 const MainList = () => {
-  const [ hover, setHover ] = useState("all");
-  const [ selected, setSelected ] = useState("all");
+  const [ hover, setHover ] = useState("");
+  const [ selected, setSelected ] = useState("");
 
   const onMouseMove = (e) => {
     if(e.target.nodeName === 'H2'){
@@ -47,10 +47,24 @@ const MainList = () => {
     }
   }
 
-  const tabList = [{
-    value: 'All',
-    id: 'all',
-  }];
+  const tabList = [
+    {
+      value: 'All',
+      id: '',
+    },
+    {
+      value: 'To do',
+      id: 'todo',
+    },
+    {
+      value: 'List',
+      id: 'list',
+    },
+    {
+      value: 'Portfolio',
+      id: 'portfolio',
+    }
+  ];
 
   return (
     <ListBox>
@@ -66,7 +80,7 @@ const MainList = () => {
           ))
         }
       </Tab>
-      <List/>
+      <List selected={selected}/>
     </ListBox>
   );
 };
