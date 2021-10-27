@@ -37,9 +37,11 @@ const MainList = () => {
   const onMouseMove = (e) => {
     if(e.target.nodeName === 'H2'){
       setHover(e.target.id);
-    } else {
-      setHover(selected);
     }
+  }
+
+  const onMouseLeave = () => {
+    setHover(selected);
   }
 
   const onClick = (e) => {
@@ -73,7 +75,10 @@ const MainList = () => {
 
   return (
     <ListBox>
-      <Tab onMouseMove={onMouseMove} onClick={onClick}>
+      <Tab 
+        onMouseMove={onMouseMove} 
+        onMouseLeave={onMouseLeave} 
+        onClick={onClick}>
         {
           tabList.map(tab => (
             <h2 
