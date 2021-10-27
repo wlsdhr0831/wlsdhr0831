@@ -26,12 +26,12 @@ const List = ({ selected }) => {
     {
       id: 1,
       title: '체크박스 전체 선택 / 전체 해제',
-      value: 'todo',
+      value: 'checkbox',
     }, 
     {
       id: 2,
       title: 'To-do List',
-      value: 'list',
+      value: 'todo',
     }, 
     {
       id: 4,

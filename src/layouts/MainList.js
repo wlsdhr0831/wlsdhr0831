@@ -53,12 +53,12 @@ const MainList = () => {
       id: '',
     },
     {
-      value: 'To do',
-      id: 'todo',
+      value: 'Check Box',
+      id: 'checkbox',
     },
     {
-      value: 'List',
-      id: 'list',
+      value: 'To do',
+      id: 'todo',
     },
     {
       value: 'Portfolio',
