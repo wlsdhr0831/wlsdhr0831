@@ -110,6 +110,10 @@ const Sub = ({ id }) => {
           script: 'javascript',
         },
       ]);
+    } else if (id === 5){
+      setCodeList([]);
+    } else if (id === 6){
+      setCodeList([]);
     }
   }, [id]);
 

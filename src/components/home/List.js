@@ -33,15 +33,25 @@ const List = ({ selected }) => {
       title: 'To-do List',
       value: 'todo',
     }, 
+    // {
+    //   id: 3,
+    //   title: 'Calendar',
+    // },
+    {
+      id: 5,
+      title: 'Change Color',
+      value: 'css',
+    },
+    {
+      id: 6,
+      title: 'Tab List',
+      value: 'css',
+    }, 
     {
       id: 4,
       title: 'Portfolio',
       value: 'portfolio',
     },
-    // {
-    //   id: 3,
-    //   title: 'Calendar',
-    // }, 
   ];
 
   return (

@@ -18,6 +18,8 @@ const theme = {
   colorEnd4: "#9163cb",
   colorStart5: "#fafa00",
   colorEnd5: "#55a630",
+  colorStart6: "#a2d6f9",
+  colorEnd6: "#1360e2",
   mobile: `(max-width: ${size.mobile})`,
   tabletS: `(max-width: ${size.tabletS})`,
   tabletM: `(max-width: ${size.tabletM})`,

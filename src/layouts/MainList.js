@@ -61,6 +61,10 @@ const MainList = () => {
       id: 'todo',
     },
     {
+      value: 'Css',
+      id: 'css',
+    },
+    {
       value: 'Portfolio',
       id: 'portfolio',
     }

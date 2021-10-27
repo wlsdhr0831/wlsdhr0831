@@ -37,27 +37,42 @@ const Detail = ({ match }) => {
             SelectObject 라는 이름의 클래스를 제작하였습니다.
             현재 Chrome에서 최적화 되어 있습니다.`,
       url: 'select-option'
-    }, {
+    }, 
+    {
       id: 2,
       title: "To-do List 구현",
       desc: `간단한 To do List 로직을 구현하였습니다.
             TodoObject 라는 이름의 클래스를 제작하였습니다.
             현재 Chrome에서 최적화 되어 있습니다.`,
       url: 'to-do'
-    }, {
+    }, 
+    {
       id: 3,
       title: "달력 구현",
       desc: `간단한 달력을 구현하였습니다.
             CalendarObject 라는 이름의 클래스를 제작하였습니다.
             현재 Chrome에서 최적화 되어 있습니다.`,
       url: 'calendar'
-    }, {
+    }, 
+    {
       id: 4,
       title: "포트폴리오 제작",
       desc: `github pages를 이용하여 포트폴리오 페이지를 제작하였습니다.
             github actions를 통한 CI/CD를 구축하였습니다.
             현재 Chrome에서 최적화 되어 있습니다.`,
       url: 'wlsdhr0831'
+    }, 
+    {
+      id: 5,
+      title: "Hover 이벤트에 따라 Background color 변경하기",
+      desc: `hover 이벤트가 발생하면 해당 id값에 맞는 색으로 배경 색이 변경됩니다.`,
+      url: 'change-color'
+    }, 
+    {
+      id: 6,
+      title: "Tab list CSS",
+      desc: `선택된 Tab과 hover 되어 있는 Tab의 크기를 크게 변경합니다.`,
+      url: 'tab-list'
     }
   ];
 
