@@ -22,6 +22,10 @@ import TabCss from '../../txt/tab/tabCss.js';
 import TabAppCss from '../../txt/tab/appCss.js';
 import * as TabDesc from '../../txt/tab/tabDesc.js';
 
+import ColorHtml from '../../txt/color/indexHtml.js';
+import ColorCss from '../../txt/color/colorCss.js';
+import ColorAppCss from '../../txt/color/appCss.js';
+
 import Highlight from 'react-highlight';
 import 'highlight.js/scss/night-owl.scss';
 
@@ -117,7 +121,23 @@ const Sub = ({ id }) => {
         },
       ]);
     } else if (id === 5){
-      setCodeList([]);
+      setCodeList([
+        {
+          fileName: 'index.html',
+          code: ColorHtml,
+          script: 'html',
+        },
+        {
+          fileName: 'app.css',
+          code: ColorAppCss,
+          script: 'css',
+        },
+        {
+          fileName: 'color.css',
+          code: ColorCss,
+          script: 'css',
+        },
+      ]);
     } else if (id === 6){
       setCodeList([
         {
