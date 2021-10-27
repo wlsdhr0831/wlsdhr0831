@@ -20,7 +20,7 @@ const Tab = styled.div`
     font-size: 1.25rem;
     display: inline-block;
     transition: all 0.5s ease-in;
-    padding: 0px 10px;
+    padding: 0px 12px;
     margin: 0px;
   }
 
