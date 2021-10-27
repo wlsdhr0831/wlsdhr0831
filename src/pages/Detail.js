@@ -65,13 +65,15 @@ const Detail = ({ match }) => {
     {
       id: 5,
       title: "Hover 이벤트에 따라 Background color 변경하기",
-      desc: `hover 이벤트가 발생하면 해당 id값에 맞는 색으로 배경 색이 변경됩니다.`,
+      desc: `hover 이벤트가 발생하면 해당 id값에 맞는 색으로 배경 색이 변경됩니다.
+            현재 Chrome에서 최적화 되어 있습니다.`,
       url: 'change-color'
     }, 
     {
       id: 6,
       title: "Tab list CSS",
-      desc: `선택된 Tab과 hover 되어 있는 Tab의 크기를 크게 변경합니다.`,
+      desc: `선택된 Tab과 hover 되어 있는 Tab의 크기를 크게 변경합니다.
+            현재 Chrome에서 최적화 되어 있습니다.`,
       url: 'tab-list'
     }
   ];

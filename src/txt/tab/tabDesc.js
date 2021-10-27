@@ -1,0 +1,1 @@
+export const app = `mouseenter, mouseout, click 이벤트를 이용하여 현재 선택된 tab을 저장하고 'hover' 클래스를 조정하였습니다.`;

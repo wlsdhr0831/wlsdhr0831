@@ -16,6 +16,12 @@ import TodoTodoCss from '../../txt/todo/todoCss.js';
 import TodoAppJs from '../../txt/todo/appJs.js';
 import * as TodoDesc from '../../txt/todo/todoDesc.js';
 
+import TabAppJs from '../../txt/tab/appJs.js';
+import TabHtml from '../../txt/tab/indexHtml.js';
+import TabCss from '../../txt/tab/tabCss.js';
+import TabAppCss from '../../txt/tab/appCss.js';
+import * as TabDesc from '../../txt/tab/tabDesc.js';
+
 import Highlight from 'react-highlight';
 import 'highlight.js/scss/night-owl.scss';
 
@@ -47,17 +53,17 @@ const Sub = ({ id }) => {
           script: 'javascript',
         },
         {
-          fileName: 'SelectObject.js',
+          fileName: 'index.html',
           code: SelectHtml,
           script: 'html',
         },
         {
-          fileName: 'SelectObject.js',
+          fileName: 'app.css',
           code: SelectAppCss,
           script: 'css',
         },
         {
-          fileName: 'SelectObject.js',
+          fileName: 'select.css',
           code: SelectCss,
           script: 'css',
         },
@@ -113,7 +119,29 @@ const Sub = ({ id }) => {
     } else if (id === 5){
       setCodeList([]);
     } else if (id === 6){
-      setCodeList([]);
+      setCodeList([
+        {
+          fileName: 'Example',
+          code: TabAppJs,
+          desc: TabDesc.app,
+          script: 'javascript',
+        },
+        {
+          fileName: 'index.html',
+          code: TabHtml,
+          script: 'html',
+        },
+        {
+          fileName: 'app.css',
+          code: TabAppCss,
+          script: 'css',
+        },
+        {
+          fileName: 'tab.css',
+          code: TabCss,
+          script: 'css',
+        },
+      ]);
     }
   }, [id]);
 
