@@ -16,7 +16,7 @@ const theme = {
   colorEnd3: "#1360e2",
   colorStart4: "#dec9e9",
   colorEnd4: "#9163cb",
-  colorStart5: "#fafa00",
+  colorStart5: "#d4d700",
   colorEnd5: "#55a630",
   colorStart6: "#a2d6f9",
   colorEnd6: "#1360e2",

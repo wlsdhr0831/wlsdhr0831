@@ -6,6 +6,7 @@ const FlexBox = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   margin: 0px;
+  width: 100%;
 `;
 
 export default FlexBox;

@@ -6,6 +6,7 @@ const ListBox = styled.div`
   position: absolute;
   top: 20%;
   padding: 0px 50px;
+  width: 90%;
 `;
 
 const Tab = styled.div`
@@ -61,8 +62,8 @@ const MainList = () => {
       id: 'todo',
     },
     {
-      value: 'Css',
-      id: 'css',
+      value: 'Style',
+      id: 'style',
     },
     {
       value: 'Portfolio',

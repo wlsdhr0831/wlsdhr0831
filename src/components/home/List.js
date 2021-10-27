@@ -4,6 +4,7 @@ import FlexBox from '../common/FlexBox';
 import styled from 'styled-components';
 
 const ScrollBox = styled.div`
+  width: 100%;
   height: calc(100vh - 275px);
   overflow: auto;
   padding: 30px;
@@ -40,12 +41,12 @@ const List = ({ selected }) => {
     {
       id: 5,
       title: 'Change Color',
-      value: 'css',
+      value: 'style',
     },
     {
       id: 6,
       title: 'Tab List',
-      value: 'css',
+      value: 'style',
     }, 
     {
       id: 4,
