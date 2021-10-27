@@ -54,8 +54,8 @@ const Detail = ({ match }) => {
     }, {
       id: 4,
       title: "포트폴리오 제작",
-      desc: `간단한 달력을 구현하였습니다.
-            CalendarObject 라는 이름의 클래스를 제작하였습니다.
+      desc: `github pages를 이용하여 포트폴리오 페이지를 제작하였습니다.
+            github actions를 통한 CI/CD를 구축하였습니다.
             현재 Chrome에서 최적화 되어 있습니다.`,
       url: 'wlsdhr0831'
     }

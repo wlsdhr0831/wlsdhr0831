@@ -6,4 +6,4 @@ deselectOption : index를 parameter로 전달 받아 특정 option 해제하는 
 isSelectedAll : 모든 option 선택 여부 반환하는 작업\n
 isRequired: 필수 option들 선택 여부 반환하는 작업\n`;
 
-export const appJs = `SelectObject 클래스의 instance 생성 후 method를 이용하여 Select List 로직 사용 가능`;
+export const appJs = `SelectObject 클래스의 instance 생성 후 method를 이용하여 Select 로직 사용 가능`;
