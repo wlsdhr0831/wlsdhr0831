@@ -1,11 +1,20 @@
-const code = `body {
+const code = `:root{
+  --color-1: #FFAC81;
+  --color-2: #FF928B;
+  --color-3: #FEC3A6;
+  --color-4: #EFE9AE;
+  --color-5: #CDEAC0;
+}
+
+body {
   margin: 0px;
   padding: 40px 0px 0px 0px;
-  background-color: #FF928B;
+  background: linear-gradient(var(--color-3), var(--color-2));
   margin: auto;
   width: 90%;
-  height: 100%;
+  height: 100vh;
   text-align: center;
+  overflow: hidden;
 }
 
 button {
@@ -16,6 +25,10 @@ button {
   font-size: 1.5rem;
   font-weight: bold;
   cursor: pointer;
+}
+
+i{
+  transition: all ease 0.5s;
 }`;
 
 export default code;

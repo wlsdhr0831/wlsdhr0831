@@ -34,25 +34,29 @@ const Detail = ({ match }) => {
       id: 1,
       title: "체크박스 전체 선택 / 전체 해제 구현",
       desc: `체크박스를 이용한 전체 선택 및 해제 로직을 구현하였습니다.
-            SelectObject 라는 이름의 클래스를 제작하였습니다. `,
+            SelectObject 라는 이름의 클래스를 제작하여  
+            현재 Chrome에서 최적화 되어 있습니다.`,
       url: 'select-option'
     }, {
       id: 2,
       title: "To-do List 구현",
       desc: `간단한 To do List 로직을 구현하였습니다.
-            TodoObject 라는 이름의 클래스를 제작하였습니다.`,
+            TodoObject 라는 이름의 클래스를 제작하였습니다.
+            현재 Chrome에서 최적화 되어 있습니다.`,
       url: 'to-do'
     }, {
       id: 3,
       title: "달력 구현",
       desc: `간단한 달력을 구현하였습니다.
-            CalendarObject 라는 이름의 클래스를 제작하였습니다.`,
+            CalendarObject 라는 이름의 클래스를 제작하였습니다.
+            현재 Chrome에서 최적화 되어 있습니다.`,
       url: 'calendar'
     }, {
       id: 4,
       title: "포트폴리오 제작",
       desc: `간단한 달력을 구현하였습니다.
-            CalendarObject 라는 이름의 클래스를 제작하였습니다.`,
+            CalendarObject 라는 이름의 클래스를 제작하였습니다.
+            현재 Chrome에서 최적화 되어 있습니다.`,
       url: 'wlsdhr0831'
     }
   ];

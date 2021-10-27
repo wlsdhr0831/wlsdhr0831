@@ -22,8 +22,8 @@ const code = `class TodoObject {
       if ("" + todo.id === id) {
         return { 
           id: todo.id, 
-          value: value || todo.value, 
-          status: status || todo.status 
+          value: value === undefined ? todo.value : value, 
+          status: status === undefined ? todo.status : status 
         };
       } else {
         return todo;

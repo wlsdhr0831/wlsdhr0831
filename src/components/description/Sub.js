@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import styled from 'styled-components';
 
 import SelectObject from '../../txt/select/selectObject.js';
 
@@ -6,11 +7,21 @@ import TodoObject from '../../txt/todo/todoObject.js';
 import TodoHtml from '../../txt/todo/indexHtml.js';
 import TodoInputCss from '../../txt/todo/inputCss.js';
 import TodoAppCss from '../../txt/todo/appCss.js';
-import TodoListCss from '../../txt/todo/listCss.js';
 import TodoTodoCss from '../../txt/todo/todoCss.js';
+import AppJs from '../../txt/todo/appJs.js';
+import * as TodoDesc from '../../txt/todo/todoDesc.js';
 
 import Highlight from 'react-highlight';
 import 'highlight.js/scss/night-owl.scss';
+
+const Desc = styled.div`
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 30px;
+  background-color: rgb(230, 230, 230);
+  border-radius: 20px;
+  white-space: pre-wrap;
+`;
 
 const Sub = ({ id }) => {
   const [codeList, setCodeList] = useState([]);
@@ -22,6 +33,7 @@ const Sub = ({ id }) => {
           fileName: 'SelectObject.js',
           code: SelectObject,
           desc: `selectAllOptions, deselectAllOptions, selectOption, deselectOption, isSelectedAll`,
+          script: 'javascript',
         },
       ]);
     } else if (id === 2) {
@@ -29,32 +41,38 @@ const Sub = ({ id }) => {
         {
           fileName: 'TodoObject.js',
           code: TodoObject,
-          desc: `postTodo, putTodo, deleteTodo`,
+          desc: TodoDesc.object,
+          script: 'javascript',
+        },
+        {
+          fileName: 'Example',
+          code: AppJs,
+          desc: TodoDesc.app,
+          script: 'javascript',
         },
         {
           fileName: 'index.html',
           code: TodoHtml,
-          desc: `inputBox, todoListBox`,
-        },
-        {
-          fileName: 'input.css',
-          code: TodoInputCss,
-          desc: `inputBox, todoListBox`,
+          desc: TodoDesc.html,
+          script: 'html',
         },
         {
           fileName: 'app.css',
           code: TodoAppCss,
-          desc: `inputBox, todoListBox`,
+          desc: TodoDesc.appCss,
+          script: 'css',
         },
         {
-          fileName: 'list.css',
-          code: TodoListCss,
-          desc: `inputBox, todoListBox`,
+          fileName: 'input.css',
+          code: TodoInputCss,
+          desc: TodoDesc.inputCss,
+          script: 'css',
         },
         {
           fileName: 'todo.css',
           code: TodoTodoCss,
-          desc: `inputBox, todoListBox`,
+          desc: TodoDesc.todoCss,
+          script: 'css',
         },
       ]);
     } else if (id === 3) {
@@ -63,6 +81,7 @@ const Sub = ({ id }) => {
           fileName: 'CalendarObject.js',
           code: '',
           desc: ``,
+          script: 'javascript',
         },
       ]);
     }
@@ -72,8 +91,9 @@ const Sub = ({ id }) => {
     {codeList.map((codeItem, idx) => (
       <div key={idx}>
         <h2>{codeItem.fileName}</h2>
-        <Highlight className="javascript">{codeItem.code}</Highlight>
-        <div>{codeItem.desc}</div>
+        <Highlight className={codeItem.script}>{codeItem.code}</Highlight>
+        { codeItem.desc.length > 0 
+          && <Desc>{codeItem.desc}</Desc>}
       </div>))
     }
   </>);

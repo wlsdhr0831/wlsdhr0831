@@ -30,6 +30,7 @@ const DescriptionBox = styled.div`
 `;
 
 const Description = ({ title, desc, id }) => {
+
   return (
     <DescriptionBox>
       <Main title={title} desc={desc} />
