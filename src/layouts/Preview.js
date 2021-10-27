@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from "react-router-dom";
+import { useHistory } from 'react-router';
 import Button from '../components/common/Button';
 import Iframe from 'react-iframe'
 
@@ -16,11 +16,11 @@ const PreviewBox = styled.div`
 `;
 
 const Preview = ({ url }) => {
+  const history = useHistory();
+
   return (
     <PreviewBox>
-      <Link to={`/main`}>
-        <Button>◀ Back</Button>
-      </Link>
+      <Button onClick={() => history.goBack()}>◀ Back</Button>
       {url &&
         <Iframe
           url={"https://wlsdhr0831.github.io/" + url + "/"}
